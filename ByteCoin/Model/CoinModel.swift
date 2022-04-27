@@ -12,4 +12,8 @@ struct CoinModel {
     let cryptoCurrency: String
     let fiatCurrency: String
     let rate: Double
+    
+    func getStringRate() -> String {
+        return String(format: "%.2f", rate)
+    }
 }
